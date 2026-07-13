@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 카톡/SNS 주소 공유 시 썸네일 설정 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="나난고 쉐어 (Nanango Share)">
+    <meta property="og:description" content="OTT, AI 등 다양한 프리미엄 계정을 가장 가성비 좋게 공유하는 플랫폼!">
+    <meta property="og:image" content="https://나난고쉐어.홈페이지.한국/images/thumbnail.png">
+    <meta property="og:url" content="https://나난고쉐어.홈페이지.한국">
     <title>nanango-share 홈</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -17,12 +23,86 @@
             </a>
         </div>
     </main>
-    <footer class="border-t border-gray-200 bg-white py-4 text-center text-xs text-gray-500">
-        <div class="space-x-4 mb-1">
-            <a href="terms.html" class="hover:underline">이용약관</a>
-            <a href="privacy.html" class="hover:underline font-semibold text-gray-700">개인정보처리방침</a>
+
+    <!-- 여기서부터 대기업 감성 푸터 시작! -->
+    <footer class="w-full bg-[#16242c] text-gray-400 text-sm mt-20 relative font-sans">
+        
+        <!-- 상단 SNS 바 -->
+        <div class="w-full bg-[#0f171c] py-4 text-center rounded-t-[20px]">
+            <div class="flex justify-center gap-4">
+                <a href="#" class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-[#ea580c] text-white text-lg transition hover:scale-110"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-[#ea580c] text-white text-lg transition hover:scale-110"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#" class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-[#ea580c] text-white text-lg transition hover:scale-110"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-[#ea580c] text-white text-lg transition hover:scale-110"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-[#ea580c] text-white text-lg transition hover:scale-110"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
         </div>
-        <p>© 2026 nanango-share. All rights reserved.</p>
+
+        <!-- 중간 메뉴 그리드 -->
+        <div class="max-w-6xl mx-auto px-6 py-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- 1열 -->
+                <div>
+                    <h3 class="text-white font-bold text-base mb-4">에 대한</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">회사 소개</a></li>
+                        <li><a href="#" class="hover:text-white transition">문의하기</a></li>
+                        <li><a href="#" class="hover:text-white transition">도움말 센터</a></li>
+                        <li><a href="#" class="hover:text-white transition">제휴 프로그램</a></li>
+                    </ul>
+                </div>
+                <!-- 2열 -->
+                <div>
+                    <h3 class="text-white font-bold text-base mb-4">합법적인</h3>
+                    <ul class="space-y-2">
+                        <li><a href="terms.html" class="hover:text-white transition">나난고쉐어 이용약관</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition">개인정보 보호정책</a></li>
+                        <li><a href="#" class="hover:text-white transition">저작권</a></li>
+                        <li><a href="#" class="hover:text-white transition">환불 정책</a></li>
+                    </ul>
+                </div>
+                <!-- 3열 -->
+                <div>
+                    <h3 class="text-white font-bold text-base mb-4">언어 및 통화</h3>
+                    <div class="inline-block bg-[#24353f] px-4 py-2 rounded-full text-gray-300 cursor-pointer">
+                        🌐 한국어
+                    </div>
+                </div>
+                <!-- 4열 -->
+                <div>
+                    <h3 class="text-white font-bold text-base mb-4">고객 서비스</h3>
+                    <p class="text-white font-bold">지원하다</p>
+                    <p class="text-[#ea580c] text-xs mb-4">연중무휴 24시간 지원</p>
+                    <div class="grid grid-cols-2 gap-2 text-[11px] text-center">
+                        <span class="bg-[#24353f] p-1.5 rounded border border-gray-700">Google Safe</span>
+                        <span class="bg-[#24353f] p-1.5 rounded border border-gray-700">TrustedSite</span>
+                        <span class="bg-[#24353f] p-1.5 rounded border border-gray-700">SSL Secured</span>
+                        <span class="bg-[#24353f] p-1.5 rounded border border-gray-700">PCI DSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 하단 결제 수단 및 정보 -->
+        <div class="bg-[#0b1114] py-8 px-6 text-center border-t border-gray-800">
+            <div class="flex justify-center items-center flex-wrap gap-5 text-gray-300 font-bold italic text-lg mb-6">
+                <span>VISA</span>
+                <span>mastercard</span>
+                <span>AMEX</span>
+                <span>DISCOVER</span>
+                <span> Pay</span>
+                <span>G Pay</span>
+                <span class="text-xs text-gray-500 not-italic font-normal">+50 more</span>
+            </div>
+            <div class="text-xs text-gray-500 space-y-1">
+                <p>모든 저작권, 상표, 서비스 상표는 해당 소유자의 소유입니다.</p>
+                <p>회사명: 나난고 쉐어 유한회사 | 대표자: 나난고 | 주소: 경기도 이천시</p>
+                <p class="pt-3">© 2026 Nanango Share Ltd. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- 아이콘 폰트 라이브러리 추가 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </body>
 </html>
